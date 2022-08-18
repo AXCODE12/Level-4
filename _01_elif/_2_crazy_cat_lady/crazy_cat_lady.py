@@ -19,4 +19,15 @@ if __name__ == '__main__':
     #      6) If they have 0 cats, show them a video of A Frog Sitting on a
     #         Bench Like a Human
 
-    pass
+    win = Tk()
+    win.withdraw()
+    que = simpledialog.askinteger('q','How many cats do you have?')
+
+    if que > 2:
+        messagebox.showinfo('a','You are a crazy cat lady!')
+    elif que > 0:
+        play_video('https://www.youtube.com/watch?v=tpiyEe_CqB4')
+    else:
+        play_video('https://www.youtube.com/watch?v=ZJT9CeEhM10')
+
+

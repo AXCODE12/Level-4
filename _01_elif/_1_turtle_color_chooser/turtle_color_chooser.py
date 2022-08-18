@@ -25,5 +25,21 @@ if __name__ == '__main__':
     #      7) Put a loop around your code so that you keep asking the user for
     #         more colors & drawing them
 
+    t = turtle.Turtle()
+
+    q = simpledialog.askstring('que','What color pen would you like to draw in: red, blue, green?')
+    for i in range(10):
+        if q == 'red':
+            t.pencolor('red')
+        elif q == 'blue':
+            t.pencolor('blue')
+        elif q == 'green':
+            t.pencolor('green')
+        else:
+            t.pencolor(get_random_color())
+    for i in range(4):
+        t.forward(50)
+        t.left(90)
+    t.width(25)
     # ===================== DO NOT EDIT THE CODE BELOW ============================
     turtle.done()
